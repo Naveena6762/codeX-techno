@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ Temperature Converter</h1>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌗 Dark Theme</button>
+
+    <div class="input-group">
+      <label for="tempInput">Enter Temperature:</label>
+      <input type="number" id="tempInput" placeholder="e.g. 100" />
+    </div>
+
+    <div class="input-group">
+      <label for="unitSelect">Select Unit:</label>
+      <select id="unitSelect">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+      <button onclick="clearFields()">Clear</button>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <div class="temp-icon">
+      <img id="tempImage" src="images/normal.png" alt="Temperature Icon" />
+    </div>
+
+    <div class="history" id="history">
+  <h3>🔁 Conversion History:</h3>
+  <button onclick="clearHistory()" class="small-button">Clear History</button>
+  <ul id="historyList"></ul>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
