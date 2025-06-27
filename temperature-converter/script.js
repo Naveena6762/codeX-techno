@@ -70,7 +70,7 @@ function toggleTheme() {
   document.body.classList.toggle("dark");
 }
 
-// 🔥 Dynamic image change
+// Dynamic image change
 function updateImage(celsius) {
   if (celsius > 35) {
     tempImage.src = "images/hot.png";
